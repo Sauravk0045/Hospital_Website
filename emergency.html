@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency</title>
+    <link rel="stylesheet" href="emergency.css">
+    <script src="https://kit.fontawesome.com/83b5c11d0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="namelogo"><h1>Paraheal Hospital</h1>
+    </div>
+    <header>
+        <div class="menu">
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our doctors.html">Our Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="adminlogin.html">Login</a></li>
+        <li><a href="contact us.html">contact us</a></li>
+        <li><a href="about us.html">About us</a></li>
+      </ul>
+      </nav>
+          </div>
+
+
+
+    </header>
+    <div class="container">
+        <h1>Emergency</h1>
+    </div>
+    <div class="main">
+        <form name="f1" action="emergency.php" method="POST" onsubmit="return validation()" class="form">
+            <label>First name: </label>
+            <br>
+            <input type="text" name="fname"class="name" id="fname" placeholder="Enter your first name">
+            <br><br>
+            <label>Last name: </label>
+            <br>
+            <input type="text" name="lname" class="name"id="lname" placeholder="Enter your last name">
+            <br><br>
+            <label>Age: </label>
+            <br>
+            <input type="number" name="age" class="name"id="age" placeholder="Enter your age">
+            <br><br>
+            <label>Phone: </label>
+            <br>
+            <input type="number" name="number"class="name" id="number" placeholder="Enter phone number">
+            <br><br>
+            <label>Email: </label>
+            <br>
+            <input type="email" name="email"class="name" id="email" placeholder="Enter your email">
+            <br><br>
+            <label>Address: </label>
+            <br>
+             <input type="text"  name="address"class="name" id="address" cols="25" rows="2" placeholder="Enter your address" >
+            <br><br>
+            <div>
+            <input type="Submit"class="submit" id="submit">
+           </div>
+        </form>
+    </div>
+    <script>  
+        function validation()  
+        {  
+            var first=document.f1.fname.value;  
+            var last=document.f1.lname.value;  
+            var age=document.f1.age.value;
+            var number=document.f1.number.value;
+            var email=document.f1.email.value
+            var address=document.f1.address.value;
+            if(first.length=="" && email.length==""&&number.length==""&&age.length==""&&last.length==""&&address.length=="") {  
+                alert("All Fields are empty");  
+                return false;  
+            }  
+            else  
+            {  
+                if(first.length=="") {  
+                    alert("first Name field is empty");  
+                    return false;  
+                }   
+                if (email.length=="") {  
+                alert("email field is empty");  
+                return false;  
+                }  
+                if(number.length=="")
+                {
+                alert("Phone number field is  empty");
+                return false;
+                }
+                if (address.length=="")
+                {
+                    alert("address field is empty");
+                    return false;
+                }
+                if(last.length=="")
+                {
+                alert("Last name field is empty");
+                return false;
+                }
+                if(age.length=="")
+                {
+                alert("Age field is empty");;
+                return false;
+                }
+            }                             
+        }  
+    </script>  
+  
+</body>
+<footer><div class="foot"><table><br>
+    <th><td><h2>Follow us At:</h2></td></th>
+    <th><td> <a href="https://www.instagram.com/parahealhospitall/"><i class="fab fa-instagram fa-2x"  style="color:white;"></i></td></th>
+  <th><td><a href="https://www.facebook.com/profile.php?id=100070061993341"><i class="fab fa-facebook-f fa-2x" style="color: white;"></i></a></td></th>
+  </table></div>
+  <div class="foot"><h3>Some Important links:</h3>
+  <table >
+    <th><a href="about us.html">About us</a></th>
+    <th><a href="emergency.html">Emergency</a></th>
+    <th><a href="appointment.html">Appointment</a></th>
+    <th><a href="our doctors.html">Know about our Doctors</a></th>
+  </table></div>
+  <h2>Made with ❤️ in India. Trademarks belong to their respective owners. All rights reserved © 2021 Paraheal hospital (India) Ltd.</h2>
+</footer>
+</html>

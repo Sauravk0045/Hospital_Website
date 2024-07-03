@@ -1,0 +1,150 @@
+*{
+margin: 0;
+  padding: 0;
+}
+{
+box-sizzing:border-box;
+}
+body
+{
+height:1000px;
+font-family:gotu;
+}
+.namelogo
+{
+width:100%;
+height: 70px;
+margin-bottom: 0;
+float: left;
+background-color: skyblue;
+padding:0;
+}
+ .namelogo h1
+{
+  width: 100%;
+  text-align: center;
+margin-top:0;
+font-size: 60px;
+margin-bottom:0;
+}
+header
+  {
+  width:100%;
+  height:70px;
+  background-color: skyblue;
+  float:left;
+  margin-bottom: 20px;
+  }
+  header .menu
+  {
+  width: 100%;
+  height: 55px;
+  margin:2px;
+  padding: 0 10px;
+  }
+  header .menu nav
+  {
+  width: 100%;
+  float: left;
+  }
+  header .menu nav ul
+  {
+  list-style: none;
+  }
+  header .menu nav ul li
+  {
+  display:inline-block;
+  padding:10px;
+  height:30px;
+  margin-left: 10px;
+  }
+  header .menu nav ul li:hover
+  {
+  border: none;
+  }
+  header .menu nav ul li:hover a
+  {
+    color: gold;
+  } 
+  
+  header .menu nav ul li a
+  {
+  font-size: 30px;
+  font-family:gotu;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  }
+.container {
+    position: relative;
+    width:33%;
+    float: left;
+    padding: 0;
+  }
+  
+  .image {
+    display: block;
+    width:250px;
+    height:250px;
+  }
+  
+  .overlay {
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:270px;
+    height: 150px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row
+  {
+display: flex;
+  }
+  .container
+  {
+flex: 33%;
+padding:10px;
+  }
+  footer
+  {
+      width: 100%;
+    background: black;
+    color: white;
+    padding-bottom: 0;
+    padding-top:none;
+    height: 100px;
+  }
+  .foot
+  {
+  width: 50%;
+  float: left;
+  }
+  th
+  {
+  padding: 10px;
+  }

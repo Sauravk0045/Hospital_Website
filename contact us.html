@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact us.css">
+    <!-- Font icon link-->
+    <script src="https://kit.fontawesome.com/83b5c11d0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="namelogo"><h1>Paraheal Hospital</h1>
+    </div>
+    <header>
+        <div class="menu">
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our doctors.html">Our Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="adminlogin.html">Login</a></li>
+        <li><a href="contact us.html">contact us</a></li>
+        <li><a href="about us.html">About us</a></li>
+      </ul>
+      </nav>
+          </div>
+    </header>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <form name="f1" class="contact-form" action="contact us.php"onsubmit="return validation()" method="POST">
+            <input type="text" id="name" name="name" class="form-text" placeholder="Your name">
+            <input type="email" id="email"name="email" class="form-text" placeholder="Your email">
+            <input type="text"id="phone"name="phone" class="form-text" placeholder="Your phone">
+            <textarea class="form-text"id="query"name="query" placeholder="Your query"></textarea>
+            <input type="submit" class="form-text-btn" id="submit"name="submit" value="send">
+        </form>
+    </div>
+    <script>  
+        function validation()  
+        {  
+            var id=document.f1.name.value;  
+            var email=document.f1.email.value;  
+            var phone=document.f1.phone.value;
+            var query=document.f1.query.value;
+            if(id.length=="" && email.length==""&&phone.length==""&&query.length=="") {  
+                alert("All Fields are empty");  
+                return false;  
+            }  
+            else  
+            {  
+                if(id.length=="") {  
+                    alert(" Name is empty");  
+                    return false;  
+                }   
+                if (email.length=="") {  
+                alert("email field is empty");  
+                return false;  
+                }  
+                if(phone.length=="")
+                {
+                alert("Phone number field is  empty");
+                return false;
+                }
+                if (query.length=="")
+                {
+                    alert("Query field is empty");
+                    return false;
+                }
+            }                             
+        }  
+    </script>  
+    <footer><div class="foot"><table><br>
+        <th><td><h2>Follow us At:</h2></td></th>
+        <th><td> <a href="https://www.instagram.com/parahealhospitall/"><i class="fab fa-instagram fa-2x"  style="color:white;"></i></td></th>
+      <th><td><a href="https://www.facebook.com/profile.php?id=100070061993341"><i class="fab fa-facebook-f fa-2x" style="color: white;"></i></a></td></th>
+      </table></div>
+      <div class="foot"><h3>Some Important links:</h3>
+      <table >
+        <th><a href="about us.html">About us</a></th>
+        <th><a href="emergency.html">Emergency</a></th>
+        <th><a href="appointment.html">Appointment</a></th>
+        <th><a href="our doctors.html">Know about our Doctors</a></th>
+      </table></div>
+      <h2>Made with ❤️ in India. Trademarks belong to their respective owners. All rights reserved © 2021 Paraheal hospital (India) Ltd.</h2>
+    </footer>
+</body>
+</html>
