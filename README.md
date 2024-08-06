@@ -1,6 +1,6 @@
 # Hospital Website
 # Overview
-The Hospital Management System developed by Saurav Kumar is a comprehensive web application designed to streamline the operations of a hospital. The website provides an intuitive and user-friendly interface, ensuring that hospital staff and patients can easily navigate and utilize the system's functionalities.
+The Hospital Management System developed by Saurav Kumar with Sunidhi Priya is a comprehensive web application designed to streamline the operations of a hospital. The website provides an intuitive and user-friendly interface, ensuring that hospital staff and patients can easily navigate and utilize the system's functionalities.
 # Features:
 * **Patient Management:** Efficient handling of patient records, including personal details, medical history, and treatment plans.
 *  **Staff Management:** Management of staff records, including doctors, nurses, and administrative personnel.
